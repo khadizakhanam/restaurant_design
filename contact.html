@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Project</title>
+    <link href="src/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-[#14171A]">
+      <!-- header section -->
+      <div class="relative">
+        <div class="absolute w-full">
+          <div class="flex justify-between px-11 py-6">
+            <div class="flex space-x-8">
+              <p class="text-white">
+                <i class="fa-solid fa-phone text-xl text-[#CE8946] mr-3"></i>
+                <span class="hidden md:inline">+880-001-658</span>
+              </p>
+              <p class="text-white">
+                <i class="fa-solid fa-envelope text-xl text-[#CE8946] mr-3"></i
+                ><span class="hidden md:inline">kachchivai@hotmail.com</span>
+              </p>
+            </div>
+            <div class="space-x-4">
+              <i class="fa-brands fa-facebook-f text-[#CE8946]"></i>
+              <i class="fa-brands fa-instagram text-[#CE8946]"></i>
+              <i class="fa-brands fa-twitter text-[#CE8946]"></i>
+              <i class="fa-brands fa-linkedin-in text-[#CE8946]"></i>
+            </div>
+          </div>
+          <div class="px-4 md:px-11">
+            <div
+              class="flex justify-between px-4 md:px-11 py-4 items-center bg-black"
+            >
+              <div class="flex gap-3 md:gap-6 md:w-[30%]">
+                <img src="all_picture_of_restaurant/Logo.png" />
+                <p class="text-sm md:text-2xl text-[#CE8946]">KACHCHI VAI</p>
+              </div>
+              <!-- nevigation menu -->
+              <div class="flex items-center gap-28">
+                <div>
+                  <ul
+                    id="mobileMenu"
+                    class="hidden absolute md:static md:flex gap-10 px-6 md:px-0 py-4 md:py-0 z-50 top-[145px] right-[15px] bg-black font-semibold text-[#CE8946]"
+                  >
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <a href="menu.html"
+                        >Menu <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html"
+                        >Portfolio <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="contact.html"
+                        >Contact <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex items-center gap-2 w-auto">
+                  <div class="md:hidden">
+                    <button id="menuToggle" class="nav-taggle">
+                      <i class="fa-solid fa-bars text-2xl text-[#CE8946]"></i>
+                    </button>
+                  </div>
+                  <button
+                    class="bg-[#CE8946] px-1.5 md:px-5 py-2 text-white flex items-center gap-1.5"
+                  >
+                    <span
+                      class="hidden md:inline w-11 border-t-2 border-white"
+                    ></span
+                    >Book A Table<span
+                      class="hidden md:inline w-11 border-t-2 border-white"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header text -->
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            class="flex flex-col justify-center items-center text-center py-36 md:p-36 w-full gap-6"
+          >
+            <h1 class="text-5xl md:w-[600px] text-[#ffffffd3]">Contact us</h1>
+            <p class="text-xl text-[#ffffffa9]">
+              We are here for you always, book your reservation now!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="all_picture_of_restaurant/businesswoman-is-talking-phone-while-having-lunch-companys-restaurant-cozy-interior_386167-3286 1.png"
+            class="w-full h-[700px] md:h-[70%] object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <!-- live google map -->
+      <div class="bg-[#14171A] flex flex-col justify-center items-center py-24">
+        <h3 class="text-[#CE8946] font-semibold text-3xl">Our Location</h3>
+        <img
+          class="h-[60px] w-[100px]"
+          src="all_picture_of_restaurant/nodes 4.png"
+        />
+
+        <div class="relative w-full m-8">
+          <div class="w-full">
+            <iframe
+              class="w-full h-[555px]"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1038.0118146116802!2d90.39217788462834!3d23.75312051702491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b989052a3e95%3A0xe52cd5b404dbe949!2sSIBL%2C%20Khansons%20Building%2C%20Kawranbazar!5e0!3m2!1sen!2sbd!4v1739859049268!5m2!1sen!2sbd"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            class="flex flex-col md:flex-row text-center gap-5 bg-black px-9 md:px-20 py-11 left-7 md:left-72 -bottom-64 md:-bottom-24 absolute"
+          >
+            <div class="text-gray-200">
+              <p class="font-bold">Open Hours</p>
+              <p class="text-gray-400">Monday to Sunday</p>
+              <p class="text-gray-400">11.00 am - 2.30pm</p>
+            </div>
+            <img
+              class="hidden md:block w-[28px] h-[26px]"
+              src="all_picture_of_restaurant/star 3.png"
+            />
+            <div>
+              <p class="font-bold text-gray-200">Contact Info</p>
+              <p class="text-gray-400">
+                Restaurant St, Delici City, London 9578, UK
+              </p>
+              <p class="text-gray-400">Email : booking@domainname.com</p>
+              <p class="text-[#9747FF]">Booking : +88-123-123456</p>
+            </div>
+            <img
+              class="hidden md:block w-[28px] h-[26px]"
+              src="all_picture_of_restaurant/star 3.png"
+            />
+            <div>
+              <p class="font-bold text-gray-200">Dinner Special</p>
+              <p class="text-gray-400">Monday to Sunday</p>
+              <p class="text-gray-400">5.30 pm - 11.30 pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- form section -->
+      <div class="bg-[#14171A] md:px-36 py-44 md:py-16">
+        <div
+          class="flex flex-col-reverse md:flex-row justify-around gap-11 items-center bg-black md:w-[1200px] md:h-[717px] p-7"
+        >
+          <div
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            class="flex flex-col justify-center items-center gap-5 text-center text-gray-200"
+          >
+            <h2 class="font-semibold text-3xl">Message us</h2>
+            <p class="w-[70%]">
+              Have a question about the our service? We're here to help, contact
+              us today
+            </p>
+            <form
+              class="flex flex-col justify-center items-center gap-4 w-full m-5"
+            >
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="bg-[#232529] text-[#ffffff9a] p-4 w-full"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="bg-[#232529] text-[#ffffff9a] p-4 w-full"
+              />
+              <input
+                type="text"
+                placeholder="Your Phone Number"
+                class="bg-[#232529] text-[#ffffff9a] p-4 w-full"
+              />
+              <input
+                type="text"
+                placeholder="Special Requests"
+                class="bg-[#232529] text-[#ffffff9a] h-[150px] p-4 w-full"
+              />
+              <button class="border-2 border-[#CE8946] p-2 w-[180px] m-5">
+                Send Your Message
+              </button>
+            </form>
+          </div>
+          <div>
+            <img
+              class="w-[505px] h-[555px]"
+              src="all_picture_of_restaurant/image 13.png"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <div
+        style="
+          background-image: url('/all_picture_of_restaurant/meat-plate-with-meat-rolls-chicken-drumstick-served-with-pear 1.png');
+        "
+        class="bg-cover bg-center w-full md:h-[355px]"
+      >
+        <div
+          class="container mx-auto px-11 md:px-32 grid grid-cols-12 gap-7 text-center py-20"
+        >
+          <div
+            class="col-span-6 md:col-span-3 flex justify-center items-center"
+          >
+            <img src="all_picture_of_restaurant/Group.png" />
+          </div>
+          <div class="col-span-6 md:col-span-3 text-white space-y-3">
+            <p class="md:w-[80%]">
+              Restaurant St, Delicious City, London 9578, UK
+            </p>
+            <p class="md:w-[80%] text-[#4D63D4]">Booking Request :</p>
+            <p class="md:w-[80%] text-[#4D63D4]">+88-123-123456</p>
+            <p class="md:w-[80%]">Open : 09:00 am - 01:00 pm</p>
+          </div>
+          <div class="col-span-6 md:col-span-3 text-white space-y-6">
+            <h3 class="w-[80%] text-xl font-bold">WE ARE HERE</h3>
+            <p class="w-[80%]">
+              Drawing on their respective experiences in the hospitality
+              industry, the duo imagined a place celebrating.
+            </p>
+          </div>
+          <div
+            class="col-span-6 md:col-span-3 text-white text-2xl font-bold w-[80%] leading-9"
+          >
+            <p>Get News & Offers Subscribe us & Get 25% Off.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#menuToggle").click(function () {
+        $("#mobileMenu").toggleClass("hidden block");
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

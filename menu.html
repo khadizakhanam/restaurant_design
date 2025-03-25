@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Project</title>
+    <link href="src/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="bg-[#14171A]">
+      <!-- header section -->
+      <div class="relative">
+        <div class="absolute w-full">
+          <div class="flex justify-between px-11 py-6">
+            <div class="flex space-x-8">
+              <p class="text-white">
+                <i class="fa-solid fa-phone text-xl text-[#CE8946] mr-3"></i
+                ><span class="hidden md:inline">+880-001-658</span>
+              </p>
+              <p class="text-white">
+                <i class="fa-solid fa-envelope text-xl text-[#CE8946] mr-3"></i
+                ><span class="hidden md:inline">kachchivai@hotmail.com</span>
+              </p>
+            </div>
+            <div class="space-x-4">
+              <i class="fa-brands fa-facebook-f text-[#CE8946]"></i>
+              <i class="fa-brands fa-instagram text-[#CE8946]"></i>
+              <i class="fa-brands fa-twitter text-[#CE8946]"></i>
+              <i class="fa-brands fa-linkedin-in text-[#CE8946]"></i>
+            </div>
+          </div>
+          <div class="px-4 md:px-11">
+            <div
+              class="flex justify-between px-4 md:px-11 py-4 items-center bg-black"
+            >
+              <div class="flex gap-3 md:gap-6 md:w-[30%]">
+                <img src="all_picture_of_restaurant/Logo.png" />
+                <p class="md:text-2xl text-sm text-[#CE8946]">KACHCHI VAI</p>
+              </div>
+              <div class="flex items-center gap-28">
+                <!-- nevigation menu -->
+                <div>
+                  <ul
+                    id="mobileMenu"
+                    class="hidden absolute md:static md:flex gap-10 px-6 md:px-0 py-4 md:py-0 z-50 top-[145px] right-[15px] bg-black font-semibold text-[#CE8946]"
+                  >
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <a href="menu.html"
+                        >Menu <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html"
+                        >Portfolio <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="contact.html"
+                        >Contact <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex items-center gap-2 w-auto">
+                  <div class="md:hidden">
+                    <button id="menuToggle" class="nav-taggle">
+                      <i class="fa-solid fa-bars text-2xl text-[#CE8946]"></i>
+                    </button>
+                  </div>
+                  <button
+                    class="bg-[#CE8946] px-1.5 md:px-5 py-2 text-white flex items-center gap-1.5"
+                  >
+                    <span
+                      class="hidden md:inline w-11 border-t-2 border-white"
+                    ></span
+                    >Book A Table<span
+                      class="hidden md:inline w-11 border-t-2 border-white"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header text -->
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="flex flex-col justify-center items-center text-center py-36 md:p-36 w-full gap-6"
+          >
+            <h1 class="text-5xl md:w-[600px] text-[#ffffffd3]">Our Menu</h1>
+            <p class="text-xl text-[#ffffffa9]">
+              Dig into the scrumptious menu!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="all_picture_of_restaurant/image 10.png"
+            class="w-full h-[700px]"
+          />
+        </div>
+      </div>
+
+      <!-- special menu -->
+      <div class="px-4 md:px-40 py-14 bg-[#14171A] space-y-20">
+        <h4
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          class="text-5xl text-[#CE8946] text-center md:text-start"
+        >
+          Special menu
+        </h4>
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          class="space-y-14 flex justify-between flex-wrap"
+        >
+          <div class="flex gap-12 md:gap-0 md:items-center">
+            <div class="flex items-center gap-3">
+              <div class="text-[#CE8946] text-2xl">
+                <i class="fa-brands fa-pix"></i>
+              </div>
+              <div>
+                <h2 class="text-xl text-[#CE8946]">Mutton Kaachci</h2>
+                <p class="text-gray-100 text-sm">
+                  Veritatis et quasi architecto beatae
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="md:border-t border-[#CE8946] md:w-60"></div>
+              <span class="text-xl text-gray-100">$34.50</span>
+            </div>
+          </div>
+          <div class="flex gap-12 md:gap-0 items-center">
+            <div class="flex items-center gap-3">
+              <div class="text-[#CE8946] text-2xl">
+                <i class="fa-brands fa-pix"></i>
+              </div>
+              <div>
+                <h2 class="text-xl text-[#CE8946]">Basmoti Kachchi</h2>
+                <p class="text-gray-100 text-sm">
+                  Veritatis et quasi architecto beatae
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="md:border-t border-[#CE8946] md:w-60"></div>
+              <span class="text-xl text-gray-100">$54.50</span>
+            </div>
+          </div>
+          <div class="flex gap-12 md:gap-0 items-center">
+            <div class="flex items-center gap-3">
+              <div class="text-[#CE8946] text-2xl">
+                <i class="fa-brands fa-pix"></i>
+              </div>
+              <div>
+                <h2 class="text-xl text-[#CE8946]">Kachchi Khadok</h2>
+                <p class="text-gray-100 text-sm">
+                  Veritatis et quasi architecto beatae
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="md:border-t border-[#CE8946] md:w-60"></div>
+              <span class="text-xl text-gray-100">$24.50</span>
+            </div>
+          </div>
+          <div class="flex gap-12 md:gap-0 items-center">
+            <div class="flex items-center gap-3">
+              <div class="text-[#CE8946] text-2xl">
+                <i class="fa-brands fa-pix"></i>
+              </div>
+              <div>
+                <h2 class="text-xl text-[#CE8946]">Chicken Polau</h2>
+                <p class="text-gray-100 text-sm">
+                  Veritatis et quasi architecto beatae
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="md:border-t border-[#CE8946] md:w-60"></div>
+              <span class="text-xl text-gray-100">$37.50</span>
+            </div>
+          </div>
+          <div class="flex gap-12 md:gap-0 items-center">
+            <div class="flex items-center gap-3">
+              <div class="text-[#CE8946] text-2xl">
+                <i class="fa-brands fa-pix"></i>
+              </div>
+              <div>
+                <h2 class="text-xl text-[#CE8946]">Chicken roast</h2>
+                <p class="text-gray-100 text-sm">
+                  Veritatis et quasi architecto beatae
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="md:border-t border-[#CE8946] md:w-60"></div>
+              <span class="text-xl text-gray-100">$29.50</span>
+            </div>
+          </div>
+          <div class="flex gap-12 md:gap-0 items-center">
+            <div class="flex items-center gap-3">
+              <div class="text-[#CE8946] text-2xl">
+                <i class="fa-brands fa-pix"></i>
+              </div>
+              <div>
+                <h2 class="text-xl text-[#CE8946]">Chui Jhal</h2>
+                <p class="text-gray-100 text-sm">
+                  Veritatis et quasi architecto beatae
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="md:border-t border-[#CE8946] md:w-60"></div>
+              <span class="text-xl text-gray-100">$30.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Appertizer section -->
+      <div class="px-5 md:px-40 py-14 space-y-3 bg-[#14171A]">
+        <p class="text-center text-2xl text-[#CE8946]">Starter Menu</p>
+        <p class="text-center text-5xl text-gray-300">Appetizer</p>
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="flex flex-col md:flex-row mt-11 gap-12"
+        >
+          <div>
+            <img
+              class="hidden md:block"
+              src="all_picture_of_restaurant/tiremark 1.png"
+            />
+          </div>
+          <div>
+            <img
+              src="all_picture_of_restaurant/bowl-food-with-side-vegetables-spices_890138-445 1.png"
+            />
+          </div>
+          <div class="space-y-5 ml-5">
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">Greek Salad</p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Tomatoes, green bell pepper, sliced cucumber onion, olives,
+                  and feta cheese.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Lasagne SEASONAL
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Butternut Pumpkin
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Typesetting industry lorem Lorem Ipsum is simply dummy text of
+                  the priand.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Tokusen Wagyu
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Dishes -->
+      <div class="px-5 md:px-40 py-14 space-y-3 bg-[#14171A]">
+        <p class="text-center text-2xl text-[#CE8946]">Exquisite</p>
+        <p class="text-center text-4xl text-gray-300">Main Dishes</p>
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="flex flex-col-reverse md:flex-row gap-8 justify-between mt-11"
+        >
+          <div class="space-y-10 ml-5">
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">Greek Salad</p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Tomatoes, green bell pepper, sliced cucumber onion, olives,
+                  and feta cheese.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Lasagne SEASONAL
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Butternut Pumpkin
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Typesetting industry lorem Lorem Ipsum is simply dummy text of
+                  the priand.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Tokusen Wagyu
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="all_picture_of_restaurant/lavash-rolls-with-meat-table_140725-7369 1.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef selection section -->
+      <div class="px-5 md:px-40 py-14 bg-[#14171A] flex flex-col md:flex-row">
+        <div class="md:w-[50%]">
+          <img
+            class="w-full h-[333px]"
+            src="all_picture_of_restaurant/image 3.png"
+          />
+        </div>
+
+        <div
+          class="bg-black md:w-[50%] rounded-r-2xl p-5 flex justify-center items-center"
+        >
+          <div class="self-start py-9">
+            <img src="all_picture_of_restaurant/shine-star 2.png" />
+          </div>
+          <div class="w-[70%] space-y-6">
+            <p class="text-[#CE8946] text-lg">Chef selection</p>
+            <p class="text-gray-100 text-3xl">Lamb Chop</p>
+            <p class="text-gray-400 text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, eligendi voluptatibus nisi repellat necessitatibus
+              ipsum possimus explicabo voluptatem inventore, quam? Qui.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dessert section -->
+      <div class="px-5 md:px-40 py-14 space-y-3 bg-[#14171A]">
+        <p class="text-center text-xl text-[#CE8946]">Sweet tooth</p>
+        <p class="text-center text-5xl text-gray-300">Dessert</p>
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="flex flex-col md:flex-row justify-between gap-7 mt-16"
+        >
+          <div>
+            <img
+              src="all_picture_of_restaurant/pieces-cottage-cheese-pie-with-blueberry-berries_116441-3677 1.png"
+            />
+          </div>
+          <div class="space-y-10 ml-5">
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">Greek Salad</p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Tomatoes, green bell pepper, sliced cucumber onion, olives,
+                  and feta cheese.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Lasagne SEASONAL
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Butternut Pumpkin
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Typesetting industry lorem Lorem Ipsum is simply dummy text of
+                  the priand.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex justify-between">
+              <div class="w-[80%] space-y-4">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Tokusen Wagyu
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks Menu -->
+      <div class="px-5 md:px-40 py-14 space-y-3 bg-[#14171A]">
+        <p class="text-center text-2xl text-[#CE8946]">Beverages</p>
+        <p class="text-center text-4xl text-gray-300">Drinks Menu</p>
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="flex flex-col md:flex-row gap-9 justify-between mt-11"
+        >
+          <div class="space-y-10 ml-5">
+            <div class="flex gap-20">
+              <div class="w-[70%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">Greek Salad</p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Tomatoes, green bell pepper, sliced cucumber onion, olives,
+                  and feta cheese.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex gap-20">
+              <div class="w-[70%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Lasagne SEASONAL
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex gap-20">
+              <div class="w-[70%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Butternut Pumpkin
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Typesetting industry lorem Lorem Ipsum is simply dummy text of
+                  the priand.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+            <div class="flex gap-20">
+              <div class="w-[70%] space-y-8">
+                <p class="text-2xl font-semibold text-gray-300">
+                  Tokusen Wagyu
+                </p>
+                <p class="text-lg leading-5 text-gray-300">
+                  Vegetables, cheeses, ground meats, tomato sauce, seasonings
+                  and spices.
+                </p>
+              </div>
+              <div class="text-2xl text-[#CE8946]">$25.50</div>
+            </div>
+          </div>
+          <div>
+            <img src="all_picture_of_restaurant/image 5.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="py-16 bg-[#14171A]">
+        <div
+          style="
+            background-image: url('/all_picture_of_restaurant/image 9.png');
+          "
+          class="bg-cover bg-center w-full border-t-2 border-b-2 border-gray-200"
+        >
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            class="px-5 md:px-40 py-14 flex gap-3 justify-between items-center"
+          >
+            <div>
+              <img
+                class="h-[222px]"
+                src="all_picture_of_restaurant/image 11.png"
+              />
+            </div>
+            <div class="text-center text-sm md:text-xl space-y-4 text-gray-100">
+              <p>
+                Tasty Lane, Culinary City, Chicago<br />
+                60601, USA
+              </p>
+              <p>Email: contact@dinefine.com</p>
+              <p>Booking Requests: +1-312-456-7890</p>
+              <p>Opening Hours: 7:00 AM - 10:00 PM</p>
+            </div>
+            <div>
+              <img
+                class="h-[222px]"
+                src="all_picture_of_restaurant/image 12.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer section -->
+      <div
+        style="
+          background-image: url('/all_picture_of_restaurant/meat-plate-with-meat-rolls-chicken-drumstick-served-with-pear 1.png');
+        "
+        class="bg-cover bg-center w-full md:h-[355px]"
+      >
+        <div
+          class="container mx-auto px-11 md:px-32 grid grid-cols-12 gap-7 text-center py-20"
+        >
+          <div
+            class="col-span-6 md:col-span-3 flex justify-center items-center"
+          >
+            <img src="all_picture_of_restaurant/Group.png" />
+          </div>
+          <div class="col-span-6 md:col-span-3 text-white space-y-3">
+            <p class="md:w-[80%]">
+              Restaurant St, Delicious City, London 9578, UK
+            </p>
+            <p class="md:w-[80%] text-[#4D63D4]">Booking Request :</p>
+            <p class="md:w-[80%] text-[#4D63D4]">+88-123-123456</p>
+            <p class="md:w-[80%]">Open : 09:00 am - 01:00 pm</p>
+          </div>
+          <div class="col-span-6 md:col-span-3 text-white space-y-6">
+            <h3 class="w-[80%] text-xl font-bold">WE ARE HERE</h3>
+            <p class="w-[80%]">
+              Drawing on their respective experiences in the hospitality
+              industry, the duo imagined a place celebrating.
+            </p>
+          </div>
+          <div
+            class="col-span-6 md:col-span-3 text-white text-2xl font-bold w-[80%] leading-9"
+          >
+            <p>Get News & Offers Subscribe us & Get 25% Off.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#menuToggle").click(function () {
+        $("#mobileMenu").toggleClass("hidden block");
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

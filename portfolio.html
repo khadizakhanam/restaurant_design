@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Project</title>
+    <link href="src/style.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+  </head>
+  <body>
+    <div class="bg-[#14171A]">
+      <!-- header section -->
+      <div class="relative">
+        <div class="absolute w-full">
+          <div class="flex justify-between px-11 py-6">
+            <div class="flex space-x-8">
+              <p class="text-white">
+                <i class="fa-solid fa-phone text-xl text-[#CE8946] mr-3"></i>
+                <span class="hidden md:inline">+880-001-658</span>
+              </p>
+              <p class="text-white">
+                <i class="fa-solid fa-envelope text-xl text-[#CE8946] mr-3"></i
+                ><span class="hidden md:inline">kachchivai@hotmail.com</span>
+              </p>
+            </div>
+            <div class="space-x-4">
+              <i class="fa-brands fa-facebook-f text-[#CE8946]"></i>
+              <i class="fa-brands fa-instagram text-[#CE8946]"></i>
+              <i class="fa-brands fa-twitter text-[#CE8946]"></i>
+              <i class="fa-brands fa-linkedin-in text-[#CE8946]"></i>
+            </div>
+          </div>
+          <div class="px-4 md:px-11">
+            <div
+              class="flex justify-between px-4 md:px-11 py-4 items-center bg-black"
+            >
+              <div class="flex gap-3 md:gap-6 md:w-[30%]">
+                <img src="all_picture_of_restaurant/Logo.png" />
+                <p class="text-sm md:text-2xl text-[#CE8946]">KACHCHI VAI</p>
+              </div>
+              <!-- navigation menu -->
+              <div class="flex items-center gap-28">
+                <div>
+                  <ul
+                    id="mobileMenu"
+                    class="hidden absolute md:static md:flex gap-10 px-6 md:px-0 py-4 md:py-0 z-50 top-[145px] right-[15px] bg-black font-semibold text-[#CE8946]"
+                  >
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                      <a href="menu.html"
+                        >Menu <i class="fa-solid fa-angle-down"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="portfolio.html"
+                        >Portfolio <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="contact.html"
+                        >Contact <i class="fa-solid fa-angle-down"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="flex items-center gap-2 w-auto">
+                  <div class="md:hidden">
+                    <button id="menuToggle" class="nav-taggle">
+                      <i class="fa-solid fa-bars text-2xl text-[#CE8946]"></i>
+                    </button>
+                  </div>
+                  <button
+                    class="bg-[#CE8946] px-1.5 md:px-5 py-2 text-white flex items-center gap-1.5"
+                  >
+                    <span
+                      class="hidden md:inline w-11 border-t-2 border-white"
+                    ></span
+                    >Book A Table<span
+                      class="hidden md:inline w-11 border-t-2 border-white"
+                    ></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- header text -->
+          <div
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            class="flex flex-col justify-center items-center text-center py-36 md:p-36 w-full gap-6"
+          >
+            <h1 class="text-5xl md:w-[600px] text-[#ffffffd3]">
+              Portfolio Detail
+            </h1>
+            <p class="text-xl text-[#ffffffa9]">Our story</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="all_picture_of_restaurant/grilled-meat-skewers-chicken-shish-kebab-with-zucchini-tomatoes-red-onions-barbecue-food_2829-8116 1.png"
+            class="w-full h-[700px]"
+          />
+        </div>
+      </div>
+      <!-- introuce section -->
+      <div
+        class="flex flex-col justify-center items-center md:px-32 py-12 text-center bg-[#14171A]"
+      >
+        <p
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="text-3xl text-[#CE8946]"
+        >
+          Who we are
+        </p>
+        <img
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="h-[60px]"
+          src="all_picture_of_restaurant/nodes 4.png"
+        />
+        <p
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="text-2xl w-[90%] md:w-[70%] text-gray-100"
+        >
+          "Discover a modern dining experience where every dish delights the
+          senses. Serving exceptional cuisine for 45 years, we invite you to
+          savor our seasonal menu and embrace the essence of fresh, natural
+          flavors."
+        </p>
+      </div>
+
+      <div
+        class="container mx-auto px-5 md:px-32 py-12 bg-[#14171A] flex flex-col md:flex-row gap-9 justify-between items-center text-center"
+      >
+        <div data-aos="zoom-in" data-aos-duration="1000" class="relative">
+          <div
+            class="text-[#CE8946] absolute left-11 top-4 md:top-7 flex flex-col justify-center border-2 gap-3 border-[#CE8946] h-[444px] p-5"
+          >
+            <p>Lunch Time</p>
+            <p>Monday to Sunday</p>
+            <p class="text-gray-100">11.00 am - 2.30pm</p>
+            <p>Dinner Time</p>
+            <p>Monday to Sunday</p>
+            <p class="text-gray-100">5.30 pm - 11.30 pm</p>
+            <p>Contact Us</p>
+            <p>
+              Restaurant St, Delicious City, London<br />
+              9578, UK
+            </p>
+            <p class="text-[#4D63D4]">+88-123-123456</p>
+            <p class="text-[#4D63D4]">reservation@restro.com</p>
+          </div>
+          <div><img src="all_picture_of_restaurant/Rectangle 11.png" /></div>
+        </div>
+        <div>
+          <img
+            src="all_picture_of_restaurant/man-working-table-workshop_1048944-7152943 1.png"
+          />
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          class="text-gray-100 w-[350px] flex flex-col justify-center items-center gap-8"
+        >
+          <p>
+            Lorem Ipsum is simply dummy text of the printingand typesetting
+            industry lorem Ipsum has been the industrys standard dummy text ever
+            since the when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book It has survived.
+          </p>
+          <img
+            src="all_picture_of_restaurant/Screenshot 2025-03-13 160259.png"
+          />
+          <p class="text-[#CE8946]">Founder: Akram Houssein</p>
+        </div>
+      </div>
+
+      <!-- counter section -->
+      <div
+        class="container mx-auto px-5 md:px-44 py-32 flex flex-wrap gap-11 justify-between text-center bg-[#14171A]"
+      >
+        <div>
+          <p class="counter text-5xl mb-3 text-white">250</p>
+          <p class="text-lg md:text-2xl text-[#CE8946]">Clients Everyday</p>
+        </div>
+
+        <div>
+          <p class="counter text-5xl mb-3 text-white">150</p>
+          <p class="text-lg md:text-2xl text-[#CE8946]">Great Moments</p>
+        </div>
+
+        <div>
+          <p class="counter text-5xl mb-3 text-white">08</p>
+          <p class="text-lg md:text-2xl text-[#CE8946]">Years Of Operation</p>
+        </div>
+
+        <div>
+          <p class="counter text-5xl mb-3 text-white">20</p>
+          <p class="text-lg md:text-2xl text-[#CE8946]">Prestigious Award</p>
+        </div>
+      </div>
+
+      <!-- Portfolio section -->
+      <div
+        class="container mx-auto px-5 md:px-32 py-12 bg-[#14171A] flex flex-col justify-center items-center"
+      >
+        <h2 class="text-[#CE8946] text-3xl">Portfolio Montage</h2>
+        <img
+          class="h-[60px] w-[100px]"
+          src="all_picture_of_restaurant/nodes 4.png"
+        />
+        <div class="flex flex-wrap justify-between gap-14 mt-11">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="relative w-[373px] h-[626px] group overflow-hidden"
+          >
+            <img
+              src="all_picture_of_restaurant/card-1.png"
+              class="w-full h-full transition-all duration-500 group-hover:scale-110"
+            />
+            <div
+              style="
+                background-image: url('/all_picture_of_restaurant/card-1.png');
+              "
+              class="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="bg-[#191E24] flex flex-col justify-center gap-5 border-4 border-[#CE8946] items-center w-[90%] h-[90%]"
+              >
+                <h2 class="text-xl font-bold text-[#CE8946]">
+                  Grilled Lamb Rack
+                </h2>
+                <p class="text-lg">Food - Restaurant</p>
+                <p class="text-center text-lg px-6 text-[#CE8946]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="relative w-[373px] h-[626px] group overflow-hidden"
+          >
+            <img
+              src="all_picture_of_restaurant/card-2.png"
+              class="w-full h-full transition-all duration-500 group-hover:scale-110"
+            />
+            <div
+              style="
+                background-image: url('/all_picture_of_restaurant/card-1.png');
+              "
+              class="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="bg-[#191E24] flex flex-col justify-center gap-5 border-4 border-[#CE8946] items-center w-[90%] h-[90%]"
+              >
+                <h2 class="text-xl font-bold text-[#CE8946]">
+                  Grilled Lamb Rack
+                </h2>
+                <p class="text-lg">Food - Restaurant</p>
+                <p class="text-center text-lg px-6 text-[#CE8946]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="relative w-[373px] h-[626px] group overflow-hidden"
+          >
+            <img
+              src="all_picture_of_restaurant/directly-shot-fruits-table_1048944-1791068 1.png"
+              class="w-full h-full transition-all duration-500 group-hover:scale-110"
+            />
+            <div
+              style="
+                background-image: url('/all_picture_of_restaurant/directly-shot-fruits-table_1048944-1791068 1.png');
+              "
+              class="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="bg-[#191E24] flex flex-col justify-center gap-5 border-4 border-[#CE8946] items-center w-[90%] h-[90%]"
+              >
+                <h2 class="text-xl font-bold text-[#CE8946]">
+                  Grilled Lamb Rack
+                </h2>
+                <p class="text-lg">Food - Restaurant</p>
+                <p class="text-center text-lg px-6 text-[#CE8946]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="relative w-[373px] h-[626px] group overflow-hidden"
+          >
+            <img
+              src="all_picture_of_restaurant/directly-shot-fruits-table_1048944-1791068 1.png"
+              class="w-full h-full transition-all duration-500 group-hover:scale-110"
+            />
+            <div
+              style="
+                background-image: url('/all_picture_of_restaurant/directly-shot-fruits-table_1048944-1791068 1.png');
+              "
+              class="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="bg-[#191E24] flex flex-col justify-center gap-5 border-4 border-[#CE8946] items-center w-[90%] h-[90%]"
+              >
+                <h2 class="text-xl font-bold text-[#CE8946]">
+                  Grilled Lamb Rack
+                </h2>
+                <p class="text-lg">Food - Restaurant</p>
+                <p class="text-center text-lg px-6 text-[#CE8946]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="relative w-[373px] h-[626px] group overflow-hidden"
+          >
+            <img
+              src="all_picture_of_restaurant/card-2.png"
+              class="w-full h-full transition-all duration-500 group-hover:scale-110"
+            />
+            <div
+              style="
+                background-image: url('/all_picture_of_restaurant/card-2.png');
+              "
+              class="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="bg-[#191E24] flex flex-col justify-center gap-5 border-4 border-[#CE8946] items-center w-[90%] h-[90%]"
+              >
+                <h2 class="text-xl font-bold text-[#CE8946]">
+                  Grilled Lamb Rack
+                </h2>
+                <p class="text-lg">Food - Restaurant</p>
+                <p class="text-center text-lg px-6 text-[#CE8946]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="relative w-[373px] h-[626px] group overflow-hidden"
+          >
+            <img
+              src="all_picture_of_restaurant/card-1.png"
+              class="w-full h-full transition-all duration-500 group-hover:scale-110"
+            />
+            <div
+              style="
+                background-image: url('/all_picture_of_restaurant/card-1.png');
+              "
+              class="absolute inset-0 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+              <div
+                class="bg-[#191E24] flex flex-col justify-center gap-5 border-4 border-[#CE8946] items-center w-[90%] h-[90%]"
+              >
+                <h2 class="text-xl font-bold text-[#CE8946]">
+                  Grilled Lamb Rack
+                </h2>
+                <p class="text-lg">Food - Restaurant</p>
+                <p class="text-center text-lg px-6 text-[#CE8946]">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry lorem Ipsum has been the industry's
+                  standard dummy text.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- review section -->
+      <div
+        class="container mx-auto px-5 md:px-32 py-20 bg-[#14171A] flex flex-col justify-center items-center"
+      >
+        <h2 class="text-[#CE8946] text-3xl">What People Are Saying</h2>
+        <img
+          class="h-[60px] w-[100px]"
+          src="all_picture_of_restaurant/nodes 4.png"
+        />
+
+        <div class="flex flex-col md:flex-row gap-14 mt-11 mb-20">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="w-[353px] h-[383px] text-gray-200 bg-black p-11 space-y-8 border-[0.5px] border-gray-400"
+          >
+            <p class="text-[#dbd51e] text-xl space-x-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p>
+              Omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            </p>
+            <div class="flex justify-baseline items-center">
+              <img
+                class="w-[77px] h-[77px]"
+                src="all_picture_of_restaurant/user.png"
+              />
+              <div>
+                <p>William Joe</p>
+                <p>New York</p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="w-[353px] h-[383px] text-gray-200 bg-black p-11 space-y-8 border-[0.5px] border-gray-400"
+          >
+            <p class="text-[#dbd51e] text-xl space-x-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p>
+              Omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            </p>
+            <div class="flex justify-baseline items-center">
+              <img
+                class="w-[77px] h-[77px]"
+                src="all_picture_of_restaurant/black-people.png"
+              />
+              <div>
+                <p>Olivia</p>
+                <p>New York</p>
+              </div>
+            </div>
+          </div>
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="w-[353px] h-[383px] text-gray-200 bg-black p-11 space-y-8 border-[0.5px] border-gray-400"
+          >
+            <p class="text-[#dbd51e] text-xl space-x-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </p>
+            <p>
+              Omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            </p>
+            <div class="flex justify-baseline items-center">
+              <img
+                class="w-[77px] h-[77px]"
+                src="all_picture_of_restaurant/user.png"
+              />
+              <div>
+                <p>William Joe</p>
+                <p>New York</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+      <div
+        style="
+          background-image: url('/all_picture_of_restaurant/meat-plate-with-meat-rolls-chicken-drumstick-served-with-pear 1.png');
+        "
+        class="bg-cover bg-center w-full md:h-[355px]"
+      >
+        <div
+          class="container mx-auto px-11 md:px-32 grid grid-cols-12 gap-7 text-center py-20"
+        >
+          <div
+            class="col-span-6 md:col-span-3 flex justify-center items-center"
+          >
+            <img src="all_picture_of_restaurant/Group.png" />
+          </div>
+          <div class="col-span-6 md:col-span-3 text-white space-y-3">
+            <p class="md:w-[80%]">
+              Restaurant St, Delicious City, London 9578, UK
+            </p>
+            <p class="md:w-[80%] text-[#4D63D4]">Booking Request :</p>
+            <p class="md:w-[80%] text-[#4D63D4]">+88-123-123456</p>
+            <p class="md:w-[80%]">Open : 09:00 am - 01:00 pm</p>
+          </div>
+          <div class="col-span-6 md:col-span-3 text-white space-y-6">
+            <h3 class="w-[80%] text-xl font-bold">WE ARE HERE</h3>
+            <p class="w-[80%]">
+              Drawing on their respective experiences in the hospitality
+              industry, the duo imagined a place celebrating.
+            </p>
+          </div>
+          <div
+            class="col-span-6 md:col-span-3 text-white text-2xl font-bold w-[80%] leading-9"
+          >
+            <p>Get News & Offers Subscribe us & Get 25% Off.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const counterUp = window.counterUp.default;
+
+    const counters = document.querySelectorAll(".counter");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            counterUp(entry.target, {
+              duration: 2000,
+              delay: 16,
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 1 }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#menuToggle").click(function () {
+        $("#mobileMenu").toggleClass("hidden block");
+      });
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
